@@ -1,0 +1,30 @@
+{
+  "name": "express-mongoose-status",
+  "version": "0.0.1",
+  "description": "A simple lib to handle mongoose responses and convert them to correct HTTP status in a REST API using Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardohbin/express-mongoose-status.git"
+  },
+  "keywords": [
+    "api",
+    "mongoose",
+    "express",
+    "rest",
+    "status",
+    "code"
+  ],
+  "author": "Ricardo Bin <ricardohbin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricardohbin/express-mongoose-status/issues"
+  },
+  "homepage": "https://github.com/ricardohbin/express-mongoose-status",
+  "dependencies": {
+    "lodash": "^3.5.0"
+  }
+}
