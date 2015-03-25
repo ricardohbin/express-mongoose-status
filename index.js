@@ -2,6 +2,13 @@
 "use strict";
 var _ = require("lodash");
 
+/**
+ * @param {Object} err - Mongoose error object
+ * @param {Object} res  - Express response object
+ * @param {Object} data  - json body
+ * @param {number} status  - status to override 200, when it has a success
+ * @param {boolean} canBeEmpty - returns success even the data is empty. Useful in collections
+ */
 module.exports = function (err, res, data, status, canBeEmpty) {
   canBeEmpty = canBeEmpty || false;
   if (err) {
@@ -46,7 +53,7 @@ function handleResults (res, data, status, canBeEmpty) {
 
 function getMongoErrorsCode (code) {
   var codes = {
-    "11000": 409
+    "11000": 409 //conflict. The field already exists and its unique
   };
 
   return codes[code] || 500;
