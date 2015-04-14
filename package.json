@@ -1,6 +1,6 @@
 {
   "name": "express-mongoose-status",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple lib to handle mongoose responses and convert them to correct HTTP status in a REST API using Express",
   "main": "index.js",
   "scripts": {
