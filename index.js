@@ -25,7 +25,7 @@ function handleErrors (res, err) {
     case "CastError":
       statusCode = 400;
       //It isn't a validation/cast error to user. Let's considerate that this id doesn't exists at all.
-      if (err.type === "ObjectId") {
+      if (err.type === "ObjectId" && err.path === "_id") {
         err = null;
         statusCode = 404;
       }
